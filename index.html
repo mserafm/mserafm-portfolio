@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Maria Serafin | Software Developer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="icon" href="images/webicon.ico"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style class="INLINE_PEN_STYLESHEET_ID">
+      .project-block {
+        min-height: 85vh;
+      }
+      .g {
+        height: 5vh;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-rows: 10vh;
+        place-content: start center;
+        z-index: 1;
+        transition: all 1s;
+        position: relative;
+      }
+
+      .g:hover {
+        background: linear-gradient(
+          transparent,
+          hsla(0, 0%, 100%, 0.5),
+          transparent
+        );
+        /*height: 30vh;*/
+      }
+
+      .g a {
+        font: 0.8em monospace;
+        position: static;
+        display: block;
+        width: 5ch;
+        height: 5ch;
+        display: grid;
+        place-content: center;
+        background: hsla(0, 0%, 100%, 0.5);
+        color: #333;
+        text-decoration: none;
+        border-bottom: thin solid #49fcd4;
+        box-sizing: border-box;
+      }
+      .g a:hover {
+        background: hsla(0, 0%, 0%, 0.5);
+        color: #eee;
+        border-bottom: 0 none;
+      }
+      .g a img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 85vh;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+        -webkit-clip-path: polygon(
+          50% 0,
+          50% 0,
+          50% 100%,
+          50% 100%,
+          50% 0,
+          50% 0,
+          50% 100%,
+          50% 100%
+        );
+        clip-path: polygon(
+          50% 0,
+          50% 0,
+          50% 100%,
+          50% 100%,
+          50% 0,
+          50% 0,
+          50% 100%,
+          50% 100%
+        );
+        transition: -webkit-clip-path 0.3s ease-in;
+        transition: clip-path 0.3s ease-in;
+        transition: clip-path 0.3s ease-in, -webkit-clip-path 0.3s ease-in;
+      }
+      .g a:hover img,
+      .g a img:hover {
+        -webkit-clip-path: polygon(
+          50% 0,
+          0 0,
+          0 100%,
+          50% 100%,
+          50% 0,
+          100% 0,
+          100% 100%,
+          50% 100%
+        );
+        clip-path: polygon(
+          50% 0,
+          0 0,
+          0 100%,
+          50% 100%,
+          50% 0,
+          100% 0,
+          100% 100%,
+          50% 100%
+        );
+      }
+      article {
+        transition: filter 0.5s;
+        margin-top: 25vh;
+      }
+      .g:hover + article {
+        filter: blur(3px);
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!--Navbar-->
+    <div class="topnav" id="myTopnav">
+      <a href="#intro-cover" id="navicon" class="scrolly"><img src="images/micon.png"></a>
+      <a href="#about" class="scrolly">About</a>
+      <a href="#work" class="scrolly">Work</a>
+      <a href="#contact" class="scrolly">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section class="intro" id="intro-cover">
+        <header>
+          <h1>Hi, I'm María</h1>
+          <h3><span class="typed"></span></h3>
+          <ul class="actions">
+            <li>
+              <a href="#about" class="arrow scrolly"
+                ><span class="label">Next</span></a
+              >
+            </li>
+          </ul>
+        </header>
+        <div class="cover-parent">
+          <div
+            class="cover-image"
+            style="background-image: url(images/cover08.jpg)"
+            data-stellar-background-ratio="0.5"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Section -->
+      <section id="about">
+        <header>
+          <h2>About me</h2>
+        </header>
+        <div class="content">
+          <p>
+            I'm María Serafín, a <strong>software developer.</strong> I like to constantly 
+            learn new stuff and improve my already existing skills. Highly 
+            focused on the quality of the products I build to always offer a good user experience.
+          </p>
+          <ul class="feature-icons">
+            <li class="icon fa-caret-right">Java</li>
+            <li class="icon fa-caret-right">Python</li>
+            <li class="icon fa-caret-right">SQL</li>
+            <li class="icon fa-caret-right">JSON</li>
+            <li class="icon fa-caret-right">HTML5</li>
+            <li class="icon fa-caret-right">CSS</li>
+            <li class="icon fa-caret-right">R</li>
+            <li class="icon fa-caret-right">Visual Basic .NET</li>
+            <li class="icon fa-caret-right">Javascript</li>
+            <li class="icon fa-caret-right">Bootstrap</li>
+            <li class="icon fa-caret-right">XQuery</li>
+            <li class="icon fa-caret-right">XPath</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section -->
+      <section id="work">
+        <header>
+          <h2>My work</h2>
+        </header>
+        <div class="content">
+          <p>
+            Take a look at some of my <strong>projects</strong> below.
+          </p>
+        </div>
+        <!-- Section -->
+      <section>
+        <header>
+          <h3 class = "work-name">Ghost Budget</h3>
+          <ul class="actions">
+            <li>
+              <a
+                href="https://github.com/mserafm/ghost-budget-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button large"
+                >See the Code</a
+              >
+            </li>
+          </ul>
+        </header>
+        <div class="content">
+          <div class="project-block">
+            <div class="g">
+              <a>1<img src="images/gallery/thumbs/01.gif" /></a
+              ><a>2<img src="images/gallery/thumbs/02.gif" /></a
+              ><a>3<img src="images/gallery/thumbs/03.gif" /></a
+              ><a>4<img src="images/gallery/thumbs/04.gif" /></a>
+            </div>
+            <article>
+              <p>
+                This is a <strong>mobile app</strong> I built 
+                to have a more visual way of managing expenses, 
+                simulate future ones and compare them. It uses different graphs 
+                to showcase different information. The data is stored 
+                in the cloud, so you can access to you account through 
+                any device and it will update in real time.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      
+      <!-- Section -->
+      <!--
+      <section>
+        <header>
+          <h3 class = "work-name">PETate</h3>
+          <ul class="actions">
+            <li><a href="#" class="button large">See the Code</a></li>
+          </ul>
+        </header>
+        <div class="content">
+          <div class="project-block">
+            <div class="g">
+              <a>1<img src="images/gallery/thumbs/01.gif" /></a
+              ><a>2<img src="images/gallery/thumbs/02.jpg" /></a
+              ><a>3<img src="images/gallery/thumbs/03.jpg" /></a
+              ><a>4<img src="images/gallery/thumbs/04.jpg" /></a>
+            </div>
+            <article>
+              <p>
+                This <strong>mobile app</strong> helps people 
+                with pets to keep record of their particular needs,
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      </section>
+    -->
+      
+
+      <!-- Section -->
+      <section id="contact">
+        <header>
+          <h2>Get in touch</h2>
+          <ul class="icons">
+            <li>
+              <a href="#" class="icon fa-linkedin"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/mserafm "
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+        </header>
+            
+
+        <div class="content">
+          <p>
+            <strong>Contact me</strong> through my socials or send me a message using the form below.
+          </p>
+          <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <div class="fields">
+              <div class="field half">
+                <input type="text" name="name" id="name" placeholder="Name" class="fcf-form-control" required/>
+              </div>
+              <div class="field half">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  class="fcf-form-control" required
+                />
+              </div>
+              <div class="field">
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  rows="7"
+                  class="fcf-form-control" required
+                ></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li>
+                <input
+                  type="submit"
+                  value="Send Message"
+
+                  id="fcf-button"
+
+                  class="button primary"
+                  
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        &copy; Untitled. All rights reserved. Design:
+        <a href="https://html5up.net">HTML5 UP</a>. Distributed by
+        <a href="https://themewagon.com/">ThemeWagon</a>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
